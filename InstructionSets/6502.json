@@ -1,0 +1,228 @@
+{
+	'instuctions': [
+		{
+			'name': 'ADC',
+			'description': 'add with carry'
+		},
+		{
+			'name': 'AND',
+			'description': 'and (with accumulator)'
+		},
+		{
+			'name': 'ASL',
+			'description': 'arithmetic shift left'
+		},
+		{
+			'name': 'BCC',
+			'description': 'branch on carry clear'
+		},
+		{
+			'name': 'BCS',
+			'description': 'branch on carry set'
+		},
+		{
+			'name': 'BEQ',
+			'description': 'branch on equal (zero set)'
+		},
+		{
+			'name': 'BIT',
+			'description': 'bit test'
+		},
+		{
+			'name': 'BMI',
+			'description': 'branch on minus (negative set)'
+		},
+		{
+			'name': 'BNE',
+			'description': 'branch on not equal (zero clear)'
+		},
+		{
+			'name': 'BPL',
+			'description': 'branch on plus (negative clear)'
+		},
+		{
+			'name': 'BRK',
+			'description': 'break / interrupt'
+		},
+		{
+			'name': 'BVC',
+			'description': 'branch on overflow clear'
+		},
+		{
+			'name': 'BVS',
+			'description': 'branch on overflow set'
+		},
+		{
+			'name': 'CLC',
+			'description': 'clear carry'
+		},
+		{
+			'name': 'CLD',
+			'description': 'clear decimal'
+		},
+		{
+			'name': 'CLI',
+			'description': 'clear interrupt disable'
+		},
+		{
+			'name': 'CLV',
+			'description': 'clear overflow'
+		},
+		{
+			'name': 'CMP',
+			'description': 'compare (with accumulator)'
+		},
+		{
+			'name': 'CPX',
+			'description': 'compare with X'
+		},
+		{
+			'name': 'CPY',
+			'description': 'compare with Y'
+		},
+		{
+			'name': 'DEC',
+			'description': 'decrement'
+		},
+		{
+			'name': 'DEX',
+			'description': 'decrement X'
+		},
+		{
+			'name': 'DEY',
+			'description': 'decrement Y'
+		},
+		{
+			'name': 'EOR',
+			'description': 'exclusive or (with accumulator)'
+		},
+		{
+			'name': 'INC',
+			'description': 'increment'
+		},
+		{
+			'name': 'INX',
+			'description': 'increment X'
+		},
+		{
+			'name': 'INY',
+			'description': 'increment Y'
+		},
+		{
+			'name': 'JMP',
+			'description': 'jump'
+		},
+		{
+			'name': 'JSR',
+			'description': 'jump subroutine'
+		},
+		{
+			'name': 'LDA',
+			'description': 'load accumulator'
+		},
+		{
+			'name': 'LDX',
+			'description': 'load X'
+		},
+		{
+			'name': 'LDY',
+			'description': 'load Y'
+		},
+		{
+			'name': 'LSR',
+			'description': 'logical shift right'
+		},
+		{
+			'name': 'NOP',
+			'description': 'no operation'
+		},
+		{
+			'name': 'ORA',
+			'description': 'or with accumulator'
+		},
+		{
+			'name': 'PHA',
+			'description': 'push accumulator'
+		},
+		{
+			'name': 'PHP',
+			'description': 'push processor status (SR)'
+		},
+		{
+			'name': 'PLA',
+			'description': 'pull accumulator'
+		},
+		{
+			'name': 'PLP',
+			'description': 'pull processor status (SR)'
+		},
+		{
+			'name': 'ROL',
+			'description': 'rotate left'
+		},
+		{
+			'name': 'ROR',
+			'description': 'rotate right'
+		},
+		{
+			'name': 'RTI',
+			'description': 'return from interrupt'
+		},
+		{
+			'name': 'RTS',
+			'description': 'return from subroutine'
+		},
+		{
+			'name': 'SBC',
+			'description': 'subtract with carry'
+		},
+		{
+			'name': 'SEC',
+			'description': 'set carry'
+		},
+		{
+			'name': 'SED',
+			'description': 'set decimal'
+		},
+		{
+			'name': 'SEI',
+			'description': 'set interrupt disable'
+		},
+		{
+			'name': 'STA',
+			'description': 'store accumulator'
+		},
+		{
+			'name': 'STX',
+			'description': 'store X'
+		},
+		{
+			'name': 'STY',
+			'description': 'store Y'
+		},
+		{
+			'name': 'TAX',
+			'description': 'transfer accumulator to X'
+		},
+		{
+			'name': 'TAY',
+			'description': 'transfer accumulator to Y'
+		},
+		{
+			'name': 'TSX',
+			'description': 'transfer stack pointer to X'
+		},
+		{
+			'name': 'TXA',
+			'description': 'transfer X to accumulator'
+		},
+		{
+			'name': 'TXS',
+			'description': 'transfer X to stack pointer'
+		},
+		{
+			'name': 'TYA',
+			'description': 'transfer Y to accumulator'
+		}
+	]
+}
