@@ -1,0 +1,114 @@
+{
+	'include': '6502.json',
+	'instructions': [
+		{
+			'name': 'ALR',
+			'alternate names': ['ASR'],
+			'description': 'AND oper + LSR'
+		},
+		{
+			'name': 'ANC',
+			'description': 'AND oper + set C as ASL'
+		},
+		{
+			'name': 'ANC',
+			'alternate names': ['ANC2'],
+			'description': 'AND oper + set C as ROL'
+		},
+		{
+			'name': 'ANE',
+			'alternate names': ['XAA'],
+			'description': 'OR X + AND oper'
+		},
+		{
+			'name': 'ARR',
+			'description': 'AND oper + ROR'
+		},
+		{
+			'name': 'DCP',
+			'alternate names': ['DCM'],
+			'description': 'DECV oper + CMP oper'
+		},
+		{
+			'name': 'ISC',
+			'alternate names': ['ISB', 'INS'],
+			'description': 'INC oper + SBC oper'
+		},
+		{
+			'name': 'LAS',
+			'alternate names': ['LAR'],
+			'description': 'LDA/TSC oper'
+		},
+		{
+			'name': 'LAX',
+			'description': 'LDA oper + LDX oper'
+		},
+		{
+			'name': 'LXA',
+			'alternate names': ['LAX immediate'],
+			'comment': 'TODO: fix the alternate name',
+			'description': 'Store * AND oper in A and X'
+		},
+		{
+			'name': 'RLA',
+			'description': 'ROL oper + AND oper'
+		},
+		{
+			'name': 'RRA',
+			'description': 'ROR oper + ADC oper'
+		},
+		{
+			'name': 'SAX',
+			'alternate names': ['AXS', 'AAX'],
+			'description': '(A AND X) stored into M'
+		},
+		{
+			'name': 'SBX',
+			'alternate names': ['AXS', 'SAX'],
+			'comment': 'TODO: This shares alternate names with SAX/AXS. How is the ambiguity resolved?',
+			'description': 'CMP and DEX, setting flags from CMP'
+		},
+		{
+			'name': 'SHA',
+			'alternate names': ['AHX', 'AXA'],
+			'description': '(A AND X AND (high byte of address + 1)) -> address'
+		},
+		{
+			'name': 'SHX',
+			'alternate names': ['A11', 'SXA', 'XAS'],
+			'description': '(X AND (high byte of address + 1)) -> address'
+		},
+		{
+			'name': 'SHY',
+			'alternate names': ['A11', 'SYA', 'SAY'],
+			'comment': 'TODO: A11 is a shared name',
+			'description': '(Y AND (high byte of address + 1)) -> address'
+		},
+		{
+			'name': 'SLO',
+			'alternate names': ['ASO'],
+			'description': 'ASL oper + ORA oper'
+		},
+		{
+			'name': 'SRE',
+			'alternate names': ['LSE'],
+			'description': 'LSR oper + EOR oper'
+		},
+		{
+			'name': 'TAS',
+			'alternate names': ['XAS', 'SHS'],
+			'description': '(A AND X) -> SP, (A AND X AND (high byte of address + 1)) -> address'
+		},
+		{
+			'name': 'USBC',
+			'alternate names': ['SBC'],
+			'description': 'SBC oper + NOP'
+		},
+		'comment': 'TODO: There are a handful of NOPs to consume more bytes using fewer total cycles. DOP and TOP are perhaps the mnemonics to use. Does it matter which opcode we choose?',
+		{
+			'name': 'JAM',
+			'alternate names': ['KIL', 'HLT'],
+			'description': 'Trap the CPU in T1 phase. $FF is on the data bus. Reset required.'
+		}
+	]
+}
