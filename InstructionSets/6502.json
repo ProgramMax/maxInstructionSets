@@ -118,10 +118,12 @@
 		},
 		{
 			'name': 'BCC',
+			'alternate names': ['BLT'],
 			'description': 'branch on carry clear'
 		},
 		{
 			'name': 'BCS',
+			'alternate names': ['BGE'],
 			'description': 'branch on carry set'
 		},
 		{
