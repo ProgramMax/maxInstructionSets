@@ -1,4 +1,108 @@
 {
+	'registers': [
+		{
+			'name': 'PC',
+			'description': 'program counter',
+			'size': 16
+		},
+		{
+			'name': 'SP',
+			'alternate names': ['S'],
+			'description': 'stack pointer',
+			'size': 8,
+			'comment': 'The stack is located between $0100 and $01FF. It cannot be moved. The stack pointer holds the low word.'
+		},
+		{
+			'name': 'AC',
+			'alternate names': ['A'],
+			'description': 'accumulator',
+			'size': 8
+		},
+		{
+			'name': 'X',
+			'alternate names': ['XR'],
+			'description': 'index register x',
+			'size': 8
+		},
+		{
+			'name': 'Y',
+			'alternate names': ['YR'],
+			'description': 'index register y',
+			'size': 8
+		},
+		{
+			'name': 'SR',
+			'alternate names': ['P'],
+			'description': 'processor status',
+			'size': 8,
+			'subregisters': [
+				{
+					'name': 'C',
+					'bit': 0
+				},
+				{
+					'name': 'Z',
+					'bit': 1
+				},
+				{
+					'name': 'I',
+					'bit': 2
+				},
+				{
+					'name': 'D',
+					'bit': 3
+				},
+				{
+					'name': 'B',
+					'bit': 4
+				},
+				{
+					'name': 'O',
+					'bit': 6
+				},
+				{
+					'name': 'N',
+					'bit': 7
+				}
+			]
+		},
+		{
+			'name': 'C',
+			'description': 'carry flag',
+			'size': 1
+		},
+		{
+			'name': 'Z',
+			'description': 'zero flag',
+			'size': 1
+		},
+		{
+			'name': 'I',
+			'description': 'interrupt disable',
+			'size': 1
+		},
+		{
+			'name': 'D',
+			'description': 'decimal mode',
+			'size': 1
+		},
+		{
+			'name': 'B',
+			'description': 'break flag',
+			'size': 1,
+			'comment': 'There is no real break flag. When an interrupt occurs, the program counter and status register are pushed onto the stack. If the cause of the interrupt was the BRK instruction, this bit will be set in the stack representation.'
+		},
+		{
+			'name': 'O',
+			'description': 'overflow flag',
+			'size': 1
+		},
+		{
+			'name': 'N',
+			'description': 'negative flag',
+			'size': 1
+		}
+	],
 	'instuctions': [
 		{
 			'name': 'ADC',
