@@ -1,5 +1,4 @@
 {
-	"$schema": "schema.json",
 	"registers": [
 		{
 			"name": "PC",
