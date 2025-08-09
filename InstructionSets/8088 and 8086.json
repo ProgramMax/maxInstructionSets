@@ -1,672 +1,672 @@
 {
-	'registers': [
+	"registers": [
 		{
-			'name': 'AX',
-			'description': 'primary accumulator',
-			'size': 16,
-			'subregisters': [
+			"name": "AX",
+			"description": "primary accumulator",
+			"size": 16,
+			"subregisters": [
 				{
-					'name': 'AL',
-					'bit': 0
+					"name": "AL",
+					"bit": 0
 				},
 				{
-					'name': 'AH',
-					'bit': 8
+					"name": "AH",
+					"bit": 8
 				}
 			]
 		},
 		{
-			'name': 'AL',
-			'size': 8
+			"name": "AL",
+			"size": 8
 		},
 		{
-			'name': 'AH',
-			'size': 8
+			"name": "AH",
+			"size": 8
 		},
 		{
-			'name': 'BX',
-			'description': 'base, accumulator',
-			'size': 16,
-			'subregisters': [
+			"name": "BX",
+			"description": "base, accumulator",
+			"size": 16,
+			"subregisters": [
 				{
-					'name': 'BL',
-					'bit': 0
+					"name": "BL",
+					"bit": 0
 				},
 				{
-					'name': 'BH',
-					'bit': 8
+					"name": "BH",
+					"bit": 8
 				}
 			]
 		},
 		{
-			'name': 'BL',
-			'size': 8
+			"name": "BL",
+			"size": 8
 		},
 		{
-			'name': 'BH',
-			'size': 8
+			"name": "BH",
+			"size": 8
 		},
 		{
-			'name': 'CX',
-			'description': 'counter, accumulator',
-			'size': 16,
-			'subregisters': [
+			"name": "CX",
+			"description": "counter, accumulator",
+			"size": 16,
+			"subregisters": [
 				{
-					'name': 'CL',
-					'bit': 0
+					"name": "CL",
+					"bit": 0
 				},
 				{
-					'name': 'CH',
-					'bit': 8
+					"name": "CH",
+					"bit": 8
 				}
 			]
 		},
 		{
-			'name': 'CL',
-			'size': 8
+			"name": "CL",
+			"size": 8
 		},
 		{
-			'name': 'CH',
-			'size': 8
+			"name": "CH",
+			"size": 8
 		},
 		{
-			'name': 'DX',
-			'description': 'accumulator, extended accumulator',
-			'size': 16,
-			'subregisters': [
+			"name": "DX",
+			"description": "accumulator, extended accumulator",
+			"size": 16,
+			"subregisters": [
 				{
-					'name': 'DL',
-					'bit': 0
+					"name": "DL",
+					"bit": 0
 				},
 				{
-					'name': 'DH',
-					'bit': 8
+					"name": "DH",
+					"bit": 8
 				}
 			]
 		},
 		{
-			'name': 'DL',
-			'size': 8
+			"name": "DL",
+			"size": 8
 		},
 		{
-			'name': 'DH',
-			'size': 8
+			"name": "DH",
+			"size": 8
 		},
 		{
-			'name': 'SI',
-			'description': 'source index'
-			'size': 16
+			"name": "SI",
+			"description": "source index"
+			"size": 16
 		},
 		{
-			'name': 'DI',
-			'description': 'destination index',
-			'size': 16
+			"name": "DI",
+			"description": "destination index",
+			"size": 16
 		},
 		{
-			'name': 'BP',
-			'description': 'base pointer',
-			'size': 16
+			"name": "BP",
+			"description": "base pointer",
+			"size": 16
 		},
 		{
-			'name': 'SP',
-			'description': 'stack pointer',
-			'size': 16
+			"name": "SP",
+			"description": "stack pointer",
+			"size": 16
 		},
 		{
-			'name': 'IP',
-			'description': 'instruction pointer',
-			'size': 16
+			"name": "IP",
+			"description": "instruction pointer",
+			"size": 16
 		},
 		{
-			'name': 'CS',
-			'description': 'code segment',
-			'size': 16
+			"name": "CS",
+			"description": "code segment",
+			"size": 16
 		},
 		{
-			'name': 'DS',
-			'description': 'data segment',
-			'size': 16
+			"name": "DS",
+			"description": "data segment",
+			"size": 16
 		},
 		{
-			'name': 'ES',
-			'description': 'extra segment',
-			'size': 16
+			"name": "ES",
+			"description": "extra segment",
+			"size": 16
 		},
 		{
-			'name': 'SS',
-			'description': 'stack segment',
-			'size': 16
+			"name": "SS",
+			"description": "stack segment",
+			"size": 16
 		},
 		{
-			'name': 'SR',
-			'description': 'status register',
-			'size': 16,
-			'subregisters': [
+			"name": "SR",
+			"description": "status register",
+			"size": 16,
+			"subregisters": [
 				{
-					'name': 'C',
-					'bit': 0
+					"name": "C",
+					"bit": 0
 				},
 				{
-					'name': 'P',
-					'bit': 2
+					"name": "P",
+					"bit": 2
 				},
 				{
-					'name': 'A',
-					'bit': 4
+					"name": "A",
+					"bit": 4
 				},
 				{
-					'name': 'Z',
-					'bit': 6
+					"name": "Z",
+					"bit": 6
 				},
 				{
-					'name': 'S',
-					'bit': 7
+					"name": "S",
+					"bit": 7
 				},
 				{
-					'name': 'T',
-					'bit': 8
+					"name": "T",
+					"bit": 8
 				},
 				{
-					'name': 'I',
-					'bit': 9
+					"name": "I",
+					"bit": 9
 				},
 				{
-					'name': 'D',
-					'bit': 10
+					"name": "D",
+					"bit": 10
 				},
 				{
-					'name': 'O',
-					'bit': 11
+					"name": "O",
+					"bit": 11
 				}
 			]
 		},
 		{
-			'name': 'O',
-			'description': 'overflow flag',
-			'size': 1
+			"name": "O",
+			"description": "overflow flag",
+			"size": 1
 		},
 		{
-			'name': 'D',
-			'description': 'direction flag',
-			'size': 1
+			"name": "D",
+			"description": "direction flag",
+			"size": 1
 		},
 		{
-			'name': 'I',
-			'description': 'interrupt flag',
-			'size': 1
+			"name": "I",
+			"description": "interrupt flag",
+			"size": 1
 		},
 		{
-			'name': 'T',
-			'description': 'trap flag',
-			'size': 1
+			"name": "T",
+			"description": "trap flag",
+			"size": 1
 		},
 		{
-			'name': 'S',
-			'description': 'sign flag',
-			'size': 1
+			"name": "S",
+			"description": "sign flag",
+			"size": 1
 		},
 		{
-			'name': 'Z',
-			'description': 'zero flag',
-			'size': 1
+			"name": "Z",
+			"description": "zero flag",
+			"size": 1
 		},
 		{
-			'name': 'A',
-			'description': 'auxiliary carry',
-			'size': 1
+			"name": "A",
+			"description": "auxiliary carry",
+			"size": 1
 		},
 		{
-			'name': 'P',
-			'description': 'parity flag',
-			'size': 1
+			"name": "P",
+			"description": "parity flag",
+			"size": 1
 		},
 		{
-			'name': 'C',
-			'description': 'carry flag',
-			'size': 1
+			"name": "C",
+			"description": "carry flag",
+			"size": 1
 		}
 	],
-	'instruction prefixes': [
+	"instruction prefixes": [
 		{
-			'name': 'LOCK',
-			'description': 'lock the bus'
+			"name": "LOCK",
+			"description": "lock the bus"
 		},
 		{
-			'name': 'REP',
-			'description': 'repeat string instruction until auto-decremented CX is zero'
+			"name": "REP",
+			"description": "repeat string instruction until auto-decremented CX is zero"
 		},
 		{
-			'name': 'REPE',
-			'alternate names': ['REPZ'],
-			'description': 'repeat string instruction until auto-decremented CX is zero and while equal/zero flag is set'
+			"name": "REPE",
+			"alternate names": ["REPZ"],
+			"description": "repeat string instruction until auto-decremented CX is zero and while equal/zero flag is set"
 		},
 		{
-			'name': 'REPNE',
-			'alternate names': ['REPNZ'],
-			'description': 'repeat string instruction until auto-decremented CX is zero and while equal/zero flag is not set'
+			"name": "REPNE",
+			"alternate names": ["REPNZ"],
+			"description": "repeat string instruction until auto-decremented CX is zero and while equal/zero flag is not set"
 		}
 	],
-	'instructions': [
+	"instructions": [
 		{
-			'name': 'AAA',
-			'description': 'ASCII adjust after addition'
+			"name": "AAA",
+			"description": "ASCII adjust after addition"
 		},
 		{
-			'name': 'AAD',
-			'description': 'ASCII adjust before division'
+			"name": "AAD",
+			"description": "ASCII adjust before division"
 		},
 		{
-			'name': 'AAM',
-			'description': 'ASCII adjust after multiply'
+			"name": "AAM",
+			"description": "ASCII adjust after multiply"
 		},
 		{
-			'name': 'AAS',
-			'description': 'ASCII adjust after subtraction'
+			"name": "AAS",
+			"description": "ASCII adjust after subtraction"
 		},
 		{
-			'name': 'ADC',
-			'description': 'add with carry'
+			"name": "ADC",
+			"description": "add with carry"
 		},
 		{
-			'name': 'ADD',
-			'description': 'add'
+			"name": "ADD",
+			"description": "add"
 		},
 		{
-			'name': 'AND',
-			'description': 'logical and'
+			"name": "AND",
+			"description": "logical and"
 		},
 		{
-			'name': 'CALL',
-			'description': 'call procedure'
+			"name": "CALL",
+			"description": "call procedure"
 		},
 		{
-			'name': 'CBW',
-			'description': 'convert byte to word'
+			"name": "CBW",
+			"description": "convert byte to word"
 		},
 		{
-			'name': 'CLC',
-			'description': 'clear carry flag'
+			"name": "CLC",
+			"description": "clear carry flag"
 		},
 		{
-			'name': 'CLD',
-			'description': 'clear direction flag'
+			"name": "CLD",
+			"description": "clear direction flag"
 		},
 		{
-			'name': 'CLI',
-			'description': 'clear interrupt flag'
+			"name": "CLI",
+			"description": "clear interrupt flag"
 		},
 		{
-			'name': 'CMC',
-			'description': 'complement carry flag'
+			"name": "CMC",
+			"description": "complement carry flag"
 		},
 		{
-			'name': 'CMP',
-			'description': 'compare two operands'
+			"name": "CMP",
+			"description": "compare two operands"
 		},
 		{
-			'name': 'CMPS',
-			'description': 'compare string'
+			"name": "CMPS",
+			"description": "compare string"
 		},
 		{
-			'name': 'CMPSB',
-			'description': 'compare string using byte-sized elements'
+			"name": "CMPSB",
+			"description": "compare string using byte-sized elements"
 		},
 		{
-			'name': 'CMPSW',
-			'description': 'compare string using word-sized elements'
+			"name": "CMPSW",
+			"description": "compare string using word-sized elements"
 		},
 		{
-			'name': 'CWD',
-			'description': 'convert word to double'
+			"name": "CWD",
+			"description": "convert word to double"
 		},
 		{
-			'name': 'DAA',
-			'description': 'decimal adjust after addition'
+			"name": "DAA",
+			"description": "decimal adjust after addition"
 		},
 		{
-			'name': 'DAS',
-			'description': 'decimal adjust after subtraction'
+			"name": "DAS",
+			"description": "decimal adjust after subtraction"
 		},
 		{
-			'name': 'DEC',
-			'description': 'decrement'
+			"name": "DEC",
+			"description": "decrement"
 		},
 		{
-			'name': 'DIV',
-			'description': 'unsigned divide'
+			"name": "DIV",
+			"description": "unsigned divide"
 		},
 		{
-			'name': 'ESC',
-			'description': 'escape'
+			"name": "ESC",
+			"description": "escape"
 		},
 		{
-			'name': 'HLT',
-			'description': 'halt'
+			"name": "HLT",
+			"description": "halt"
 		},
 		{
-			'name': 'IDIV',
-			'description': 'signed divide'
+			"name": "IDIV",
+			"description": "signed divide"
 		},
 		{
-			'name': 'IMUL',
-			'description': 'signed multiply'
+			"name": "IMUL",
+			"description": "signed multiply"
 		},
 		{
-			'name': 'IN',
-			'description': 'input from port'
+			"name": "IN",
+			"description": "input from port"
 		},
 		{
-			'name': 'INC',
-			'description': 'increment'
+			"name": "INC",
+			"description": "increment"
 		},
 		{
-			'name': 'INT',
-			'description': 'interrupt'
+			"name": "INT",
+			"description": "interrupt"
 		},
 		{
-			'name': 'INTO',
-			'description': 'interrupt on overflow'
+			"name": "INTO",
+			"description": "interrupt on overflow"
 		},
 		{
-			'name': 'IRET',
-			'description': 'interrupt return'
+			"name": "IRET",
+			"description": "interrupt return"
 		},
 		{
-			'name': 'JA',
-			'alternate names': ['JNBE'],
-			'description': 'jump if above/not below or equal (unsigned comparison)'
+			"name": "JA",
+			"alternate names": ["JNBE"],
+			"description": "jump if above/not below or equal (unsigned comparison)"
 		},
 		{
-			'name': 'JAE',
-			'alternate names': ['JNB'],
-			'description': 'jump if above or equal/not below (unsigned comparison)'
+			"name": "JAE",
+			"alternate names": ["JNB"],
+			"description": "jump if above or equal/not below (unsigned comparison)"
 		},
 		{
-			'name': 'JB',
-			'alternate names': ['JNAE'],
-			'description': 'jump if below/not above or equal (unsigned comparison)'
+			"name": "JB",
+			"alternate names": ["JNAE"],
+			"description": "jump if below/not above or equal (unsigned comparison)"
 		},
 		{
-			'name': 'JBE',
-			'alternate names': ['JNA'],
-			'description': 'jump if below or equal/not above (unsigned comparison)'
+			"name": "JBE",
+			"alternate names": ["JNA"],
+			"description": "jump if below or equal/not above (unsigned comparison)"
 		},
 		{
-			'name': 'JC',
-			'description': 'jump if carry'
+			"name": "JC",
+			"description": "jump if carry"
 		},
 		{
-			'name': 'JCXZ',
-			'description': 'jump if CX is zero'
+			"name": "JCXZ",
+			"description": "jump if CX is zero"
 		},
 		{
-			'name': 'JE',
-			'alternate names': ['JZ'],
-			'description': 'jump if equal (zero)'
+			"name": "JE",
+			"alternate names": ["JZ"],
+			"description": "jump if equal (zero)"
 		},
 		{
-			'name': 'JG',
-			'alternate names': ['JNLE'],
-			'description': 'jump if greater/not less or equal (signed comparison)'
+			"name": "JG",
+			"alternate names": ["JNLE"],
+			"description": "jump if greater/not less or equal (signed comparison)"
 		},
 		{
-			'name': 'JGE',
-			'alternate names': ['JNL'],
-			'description': 'jump if greater or equal/not less (signed comparison)'
+			"name": "JGE",
+			"alternate names": ["JNL"],
+			"description": "jump if greater or equal/not less (signed comparison)"
 		},
 		{
-			'name': 'JL',
-			'alternate names': ['JNGE'],
-			'description': 'jump if less/not greater or equal (signed comparison)'
+			"name": "JL",
+			"alternate names": ["JNGE"],
+			"description": "jump if less/not greater or equal (signed comparison)"
 		},
 		{
-			'name': 'JLE',
-			'alternate names': ['JNG'],
-			'description': 'jump if less or equal/not greater (signed comparison)'
+			"name": "JLE",
+			"alternate names": ["JNG"],
+			"description": "jump if less or equal/not greater (signed comparison)"
 		},
 		{
-			'name': 'JMP',
-			'description': 'jump unconditionally'
+			"name": "JMP",
+			"description": "jump unconditionally"
 		},
 		{
-			'name': 'JNC',
-			'description': 'jump if not carry'
+			"name": "JNC",
+			"description": "jump if not carry"
 		},
 		{
-			'name': 'JNE',
-			'alternate names': ['JNZ'],
-			'description': 'jump if not equal (not zero)'
+			"name": "JNE",
+			"alternate names": ["JNZ"],
+			"description": "jump if not equal (not zero)"
 		},
 		{
-			'name': 'JNO',
-			'description': 'jump if not overflow'
+			"name": "JNO",
+			"description": "jump if not overflow"
 		},
 		{
-			'name': 'JNP',
-			'alternate names': ['JPO'],
-			'description': 'jump if no parity/parity odd'
+			"name": "JNP",
+			"alternate names": ["JPO"],
+			"description": "jump if no parity/parity odd"
 		},
 		{
-			'name': 'JNS',
-			'description': 'jump if not sign'
+			"name": "JNS",
+			"description": "jump if not sign"
 		},
 		{
-			'name': 'JO',
-			'description': 'jump if overflow'
+			"name": "JO",
+			"description": "jump if overflow"
 		},
 		{
-			'name': 'JP',
-			'alternate names': ['JPE'],
-			'description': 'jump if parity/parity even'
+			"name": "JP",
+			"alternate names": ["JPE"],
+			"description": "jump if parity/parity even"
 		},
 		{
-			'name': 'JS',
-			'description': 'jump if sign'
+			"name": "JS",
+			"description": "jump if sign"
 		},
 		{
-			'name': 'LAHF',
-			'description': 'load flags into AH register'
+			"name": "LAHF",
+			"description": "load flags into AH register"
 		},
 		{
-			'name': 'LDS',
-			'description': 'load far pointer into DS'
+			"name": "LDS",
+			"description": "load far pointer into DS"
 		},
 		{
-			'name': 'LES',
-			'description': 'load far pointer into ES'
+			"name": "LES",
+			"description": "load far pointer into ES"
 		},
 		{
-			'name': 'LEA',
-			'description': 'load effective address'
+			"name": "LEA",
+			"description": "load effective address"
 		},
 		{
-			'name': 'LODS',
-			'description': 'load string operand'
+			"name": "LODS",
+			"description": "load string operand"
 		},
 		{
-			'name': 'LODSB',
-			'description': 'load string operand (byte-sized elements)'
+			"name": "LODSB",
+			"description": "load string operand (byte-sized elements)"
 		},
 		{
-			'name': 'LODSW',
-			'description': 'load string operand (word-sized elements)'
+			"name": "LODSW",
+			"description": "load string operand (word-sized elements)"
 		},
 		{
-			'name': 'LOOP',
-			'description': 'loop until auto-decremented CX is zero'
+			"name": "LOOP",
+			"description": "loop until auto-decremented CX is zero"
 		},
 		{
-			'name': 'LOOPE',
-			'alternate names': ['LOOPZ'],
-			'description': 'loop until auto-decremented CX is zero and while equal/zero flag is set'
+			"name": "LOOPE",
+			"alternate names": ["LOOPZ"],
+			"description": "loop until auto-decremented CX is zero and while equal/zero flag is set"
 		},
 		{
-			'name': 'LOOPNE',
-			'alternate names': ['LOOPNZ'],
-			'description':'loop until auto-decremented CX is zero and while equal/zero flag is not set'
+			"name": "LOOPNE",
+			"alternate names": ["LOOPNZ"],
+			"description":"loop until auto-decremented CX is zero and while equal/zero flag is not set"
 		},
 		{
-			'name': 'MOV',
-			'description': 'move data'
+			"name": "MOV",
+			"description": "move data"
 		},
 		{
-			'name': 'MOVS',
-			'description': 'move string data'
+			"name": "MOVS",
+			"description": "move string data"
 		},
 		{
-			'name': 'MOVSB',
-			'description': 'move string data (byte-sized elements)'
+			"name": "MOVSB",
+			"description": "move string data (byte-sized elements)"
 		},
 		{
-			'name': 'MOVSW',
-			'description': 'move string data (word-sized elements)'
+			"name": "MOVSW",
+			"description": "move string data (word-sized elements)"
 		},
 		{
-			'name': 'MUL',
-			'description': 'unsigned multiply'
+			"name": "MUL",
+			"description": "unsigned multiply"
 		},
 		{
-			'name': 'NEG',
-			'description': "two's complement negation"
+			"name": "NEG",
+			"description": "two's complement negation"
 		},
 		{
-			'name': 'NOP',
-			'description': 'no operation'
+			"name": "NOP",
+			"description": "no operation"
 		},
 		{
-			'name': 'NOT',
-			'description': 'one's complement negation'
+			"name": "NOT",
+			"description": "one"s complement negation"
 		},
 		{
-			'name': 'OR',
-			'description': 'inclusive or'
+			"name": "OR",
+			"description": "inclusive or"
 		},
 		{
-			'name': 'OUT',
-			'description': 'output to port'
+			"name": "OUT",
+			"description": "output to port"
 		},
 		{
-			'name': 'POP',
-			'description': 'pop from the top of the stack'
+			"name": "POP",
+			"description": "pop from the top of the stack"
 		},
 		{
-			'name': 'POPF',
-			'description': 'pop flags from the top of the stack'
+			"name": "POPF",
+			"description": "pop flags from the top of the stack"
 		},
 		{
-			'name': 'PUSH',
-			'description': 'push onto the stack'
+			"name": "PUSH",
+			"description": "push onto the stack"
 		},
 		{
-			'name': 'PUSHF',
-			'description': 'push flags onto the stack'
+			"name": "PUSHF",
+			"description": "push flags onto the stack"
 		},
 		{
-			'name': 'RCL',
-			'description': 'rotate left through carry flag'
+			"name": "RCL",
+			"description": "rotate left through carry flag"
 		},
 		{
-			'name': 'RCR',
-			'description': 'rotate right through carry flag'
+			"name": "RCR",
+			"description": "rotate right through carry flag"
 		},
 		{
-			'name': 'RETF',
-			'description': 'return far from procedure'
-			'comment': 'RET is a shorthand for RETF or RETN, depending on PROC size'
+			"name": "RETF",
+			"description": "return far from procedure"
+			"comment": "RET is a shorthand for RETF or RETN, depending on PROC size"
 		},
 		{
-			'name': 'RETN',
-			'description': 'return near from procedure'
+			"name": "RETN",
+			"description": "return near from procedure"
 		},
 		{
-			'name': 'ROL',
-			'description': 'rotate left'
+			"name": "ROL",
+			"description": "rotate left"
 		},
 		{
-			'name': 'ROR',
-			'description': 'rotate right'
+			"name": "ROR",
+			"description": "rotate right"
 		},
 		{
-			'name': 'SAHF',
-			'description': 'store AH into flags'
+			"name": "SAHF",
+			"description": "store AH into flags"
 		},
 		{
-			'name': 'SAL',
-			'alternate names': ['SHL'],
-			'description': 'shift arithmetic left'
+			"name": "SAL",
+			"alternate names": ["SHL"],
+			"description": "shift arithmetic left"
 		},
 		{
-			'name': 'SAR',
-			'description': 'shift arithmetic right'
+			"name": "SAR",
+			"description": "shift arithmetic right"
 		},
 		{
-			'name': 'SHR',
-			'description': 'shift logical right'
+			"name": "SHR",
+			"description": "shift logical right"
 		},
 		{
-			'name': 'SBB',
-			'description': 'subtract with borrow'
+			"name": "SBB",
+			"description": "subtract with borrow"
 		},
 		{
-			'name': 'SCAS',
-			'description': 'scan string'
+			"name": "SCAS",
+			"description": "scan string"
 		},
 		{
-			'name': 'SCASB',
-			'description': 'scan string (byte-sized elements)'
+			"name": "SCASB",
+			"description": "scan string (byte-sized elements)"
 		},
 		{
-			'name': 'SCASW',
-			'description': 'scan string (word-sized elements)'
+			"name": "SCASW",
+			"description": "scan string (word-sized elements)"
 		},
 		{
-			'name': 'STC',
-			'description': 'set carry flag'
+			"name": "STC",
+			"description": "set carry flag"
 		},
 		{
-			'name': 'STD',
-			'description': 'set direction flag'
+			"name": "STD",
+			"description": "set direction flag"
 		},
 		{
-			'name': 'STI',
-			'description': 'set interrupt flag'
+			"name": "STI",
+			"description": "set interrupt flag"
 		},
 		{
-			'name': 'STOS',
-			'description': 'store string data'
+			"name": "STOS",
+			"description": "store string data"
 		},
 		{
-			'name': 'STOSB',
-			'description': 'store string data (byte-sized elements)'
+			"name": "STOSB",
+			"description": "store string data (byte-sized elements)"
 		},
 		{
-			'name': 'STOSW',
-			'description': 'store string data (word-sized elements)'
+			"name": "STOSW",
+			"description": "store string data (word-sized elements)"
 		},
 		{
-			'name': 'SUB',
-			'description': 'subtract'
+			"name": "SUB",
+			"description": "subtract"
 		},
 		{
-			'name': 'TEST',
-			'description': 'logical compare'
+			"name": "TEST",
+			"description": "logical compare"
 		},
 		{
-			'name': 'WAIT',
-			'description': 'wait for signal from coprocessor'
+			"name": "WAIT",
+			"description": "wait for signal from coprocessor"
 		},
 		{
-			'name': 'XCHG',
-			'description': 'exchange'
+			"name": "XCHG",
+			"description": "exchange"
 		},
 		{
-			'name': 'XLAT',
-			'alternate names': ['XLATB'],
-			'description': 'lookup table translation'
+			"name": "XLAT",
+			"alternate names": ["XLATB"],
+			"description": "lookup table translation"
 		},
 		{
-			'name': 'XOR',
-			'description': 'exclusive or'
+			"name": "XOR",
+			"description": "exclusive or"
 		}
 	]
 }

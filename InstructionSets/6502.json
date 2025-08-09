@@ -103,7 +103,7 @@
 			"size": 1
 		}
 	],
-	"instuctions": [
+	"instructions": [
 		{
 			"name": "ADC",
 			"description": "add with carry"
