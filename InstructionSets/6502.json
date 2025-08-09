@@ -1,334 +1,334 @@
 {
-	'registers': [
+	"registers": [
 		{
-			'name': 'PC',
-			'description': 'program counter',
-			'size': 16
+			"name": "PC",
+			"description": "program counter",
+			"size": 16
 		},
 		{
-			'name': 'SP',
-			'alternate names': ['S'],
-			'description': 'stack pointer',
-			'size': 8,
-			'comment': 'The stack is located between $0100 and $01FF. It cannot be moved. The stack pointer holds the low word.'
+			"name": "SP",
+			"alternate names": ["S"],
+			"description": "stack pointer",
+			"size": 8,
+			"comment": "The stack is located between $0100 and $01FF. It cannot be moved. The stack pointer holds the low word."
 		},
 		{
-			'name': 'AC',
-			'alternate names': ['A'],
-			'description': 'accumulator',
-			'size': 8
+			"name": "AC",
+			"alternate names": ["A"],
+			"description": "accumulator",
+			"size": 8
 		},
 		{
-			'name': 'X',
-			'alternate names': ['XR'],
-			'description': 'index register x',
-			'size': 8
+			"name": "X",
+			"alternate names": ["XR"],
+			"description": "index register x",
+			"size": 8
 		},
 		{
-			'name': 'Y',
-			'alternate names': ['YR'],
-			'description': 'index register y',
-			'size': 8
+			"name": "Y",
+			"alternate names": ["YR"],
+			"description": "index register y",
+			"size": 8
 		},
 		{
-			'name': 'SR',
-			'alternate names': ['P'],
-			'description': 'processor status',
-			'size': 8,
-			'subregisters': [
+			"name": "SR",
+			"alternate names": ["P"],
+			"description": "processor status",
+			"size": 8,
+			"subregisters": [
 				{
-					'name': 'C',
-					'bit': 0
+					"name": "C",
+					"bit": 0
 				},
 				{
-					'name': 'Z',
-					'bit': 1
+					"name": "Z",
+					"bit": 1
 				},
 				{
-					'name': 'I',
-					'bit': 2
+					"name": "I",
+					"bit": 2
 				},
 				{
-					'name': 'D',
-					'bit': 3
+					"name": "D",
+					"bit": 3
 				},
 				{
-					'name': 'B',
-					'bit': 4
+					"name": "B",
+					"bit": 4
 				},
 				{
-					'name': 'O',
-					'bit': 6
+					"name": "O",
+					"bit": 6
 				},
 				{
-					'name': 'N',
-					'bit': 7
+					"name": "N",
+					"bit": 7
 				}
 			]
 		},
 		{
-			'name': 'C',
-			'description': 'carry flag',
-			'size': 1
+			"name": "C",
+			"description": "carry flag",
+			"size": 1
 		},
 		{
-			'name': 'Z',
-			'description': 'zero flag',
-			'size': 1
+			"name": "Z",
+			"description": "zero flag",
+			"size": 1
 		},
 		{
-			'name': 'I',
-			'description': 'interrupt disable',
-			'size': 1
+			"name": "I",
+			"description": "interrupt disable",
+			"size": 1
 		},
 		{
-			'name': 'D',
-			'description': 'decimal mode',
-			'size': 1
+			"name": "D",
+			"description": "decimal mode",
+			"size": 1
 		},
 		{
-			'name': 'B',
-			'description': 'break flag',
-			'size': 1,
-			'comment': 'There is no real break flag. When an interrupt occurs, the program counter and status register are pushed onto the stack. If the cause of the interrupt was the BRK instruction, this bit will be set in the stack representation.'
+			"name": "B",
+			"description": "break flag",
+			"size": 1,
+			"comment": "There is no real break flag. When an interrupt occurs, the program counter and status register are pushed onto the stack. If the cause of the interrupt was the BRK instruction, this bit will be set in the stack representation."
 		},
 		{
-			'name': 'O',
-			'description': 'overflow flag',
-			'size': 1
+			"name": "O",
+			"description": "overflow flag",
+			"size": 1
 		},
 		{
-			'name': 'N',
-			'description': 'negative flag',
-			'size': 1
+			"name": "N",
+			"description": "negative flag",
+			"size": 1
 		}
 	],
-	'instuctions': [
+	"instuctions": [
 		{
-			'name': 'ADC',
-			'description': 'add with carry'
+			"name": "ADC",
+			"description": "add with carry"
 		},
 		{
-			'name': 'AND',
-			'description': 'and (with accumulator)'
+			"name": "AND",
+			"description": "and (with accumulator)"
 		},
 		{
-			'name': 'ASL',
-			'description': 'arithmetic shift left'
+			"name": "ASL",
+			"description": "arithmetic shift left"
 		},
 		{
-			'name': 'BCC',
-			'alternate names': ['BLT'],
-			'description': 'branch on carry clear'
+			"name": "BCC",
+			"alternate names": ["BLT"],
+			"description": "branch on carry clear"
 		},
 		{
-			'name': 'BCS',
-			'alternate names': ['BGE'],
-			'description': 'branch on carry set'
+			"name": "BCS",
+			"alternate names": ["BGE"],
+			"description": "branch on carry set"
 		},
 		{
-			'name': 'BEQ',
-			'description': 'branch on equal (zero set)'
+			"name": "BEQ",
+			"description": "branch on equal (zero set)"
 		},
 		{
-			'name': 'BIT',
-			'description': 'bit test'
+			"name": "BIT",
+			"description": "bit test"
 		},
 		{
-			'name': 'BMI',
-			'description': 'branch on minus (negative set)'
+			"name": "BMI",
+			"description": "branch on minus (negative set)"
 		},
 		{
-			'name': 'BNE',
-			'description': 'branch on not equal (zero clear)'
+			"name": "BNE",
+			"description": "branch on not equal (zero clear)"
 		},
 		{
-			'name': 'BPL',
-			'description': 'branch on plus (negative clear)'
+			"name": "BPL",
+			"description": "branch on plus (negative clear)"
 		},
 		{
-			'name': 'BRK',
-			'description': 'break / interrupt'
+			"name": "BRK",
+			"description": "break / interrupt"
 		},
 		{
-			'name': 'BVC',
-			'description': 'branch on overflow clear'
+			"name": "BVC",
+			"description": "branch on overflow clear"
 		},
 		{
-			'name': 'BVS',
-			'description': 'branch on overflow set'
+			"name": "BVS",
+			"description": "branch on overflow set"
 		},
 		{
-			'name': 'CLC',
-			'description': 'clear carry'
+			"name": "CLC",
+			"description": "clear carry"
 		},
 		{
-			'name': 'CLD',
-			'description': 'clear decimal'
+			"name": "CLD",
+			"description": "clear decimal"
 		},
 		{
-			'name': 'CLI',
-			'description': 'clear interrupt disable'
+			"name": "CLI",
+			"description": "clear interrupt disable"
 		},
 		{
-			'name': 'CLV',
-			'description': 'clear overflow'
+			"name": "CLV",
+			"description": "clear overflow"
 		},
 		{
-			'name': 'CMP',
-			'description': 'compare (with accumulator)'
+			"name": "CMP",
+			"description": "compare (with accumulator)"
 		},
 		{
-			'name': 'CPX',
-			'description': 'compare with X'
+			"name": "CPX",
+			"description": "compare with X"
 		},
 		{
-			'name': 'CPY',
-			'description': 'compare with Y'
+			"name": "CPY",
+			"description": "compare with Y"
 		},
 		{
-			'name': 'DEC',
-			'description': 'decrement'
+			"name": "DEC",
+			"description": "decrement"
 		},
 		{
-			'name': 'DEX',
-			'description': 'decrement X'
+			"name": "DEX",
+			"description": "decrement X"
 		},
 		{
-			'name': 'DEY',
-			'description': 'decrement Y'
+			"name": "DEY",
+			"description": "decrement Y"
 		},
 		{
-			'name': 'EOR',
-			'description': 'exclusive or (with accumulator)'
+			"name": "EOR",
+			"description": "exclusive or (with accumulator)"
 		},
 		{
-			'name': 'INC',
-			'description': 'increment'
+			"name": "INC",
+			"description": "increment"
 		},
 		{
-			'name': 'INX',
-			'description': 'increment X'
+			"name": "INX",
+			"description": "increment X"
 		},
 		{
-			'name': 'INY',
-			'description': 'increment Y'
+			"name": "INY",
+			"description": "increment Y"
 		},
 		{
-			'name': 'JMP',
-			'description': 'jump'
+			"name": "JMP",
+			"description": "jump"
 		},
 		{
-			'name': 'JSR',
-			'description': 'jump subroutine'
+			"name": "JSR",
+			"description": "jump subroutine"
 		},
 		{
-			'name': 'LDA',
-			'description': 'load accumulator'
+			"name": "LDA",
+			"description": "load accumulator"
 		},
 		{
-			'name': 'LDX',
-			'description': 'load X'
+			"name": "LDX",
+			"description": "load X"
 		},
 		{
-			'name': 'LDY',
-			'description': 'load Y'
+			"name": "LDY",
+			"description": "load Y"
 		},
 		{
-			'name': 'LSR',
-			'description': 'logical shift right'
+			"name": "LSR",
+			"description": "logical shift right"
 		},
 		{
-			'name': 'NOP',
-			'description': 'no operation'
+			"name": "NOP",
+			"description": "no operation"
 		},
 		{
-			'name': 'ORA',
-			'description': 'or with accumulator'
+			"name": "ORA",
+			"description": "or with accumulator"
 		},
 		{
-			'name': 'PHA',
-			'description': 'push accumulator'
+			"name": "PHA",
+			"description": "push accumulator"
 		},
 		{
-			'name': 'PHP',
-			'description': 'push processor status (SR)'
+			"name": "PHP",
+			"description": "push processor status (SR)"
 		},
 		{
-			'name': 'PLA',
-			'description': 'pull accumulator'
+			"name": "PLA",
+			"description": "pull accumulator"
 		},
 		{
-			'name': 'PLP',
-			'description': 'pull processor status (SR)'
+			"name": "PLP",
+			"description": "pull processor status (SR)"
 		},
 		{
-			'name': 'ROL',
-			'description': 'rotate left'
+			"name": "ROL",
+			"description": "rotate left"
 		},
 		{
-			'name': 'ROR',
-			'description': 'rotate right'
+			"name": "ROR",
+			"description": "rotate right"
 		},
 		{
-			'name': 'RTI',
-			'description': 'return from interrupt'
+			"name": "RTI",
+			"description": "return from interrupt"
 		},
 		{
-			'name': 'RTS',
-			'description': 'return from subroutine'
+			"name": "RTS",
+			"description": "return from subroutine"
 		},
 		{
-			'name': 'SBC',
-			'description': 'subtract with carry'
+			"name": "SBC",
+			"description": "subtract with carry"
 		},
 		{
-			'name': 'SEC',
-			'description': 'set carry'
+			"name": "SEC",
+			"description": "set carry"
 		},
 		{
-			'name': 'SED',
-			'description': 'set decimal'
+			"name": "SED",
+			"description": "set decimal"
 		},
 		{
-			'name': 'SEI',
-			'description': 'set interrupt disable'
+			"name": "SEI",
+			"description": "set interrupt disable"
 		},
 		{
-			'name': 'STA',
-			'description': 'store accumulator'
+			"name": "STA",
+			"description": "store accumulator"
 		},
 		{
-			'name': 'STX',
-			'description': 'store X'
+			"name": "STX",
+			"description": "store X"
 		},
 		{
-			'name': 'STY',
-			'description': 'store Y'
+			"name": "STY",
+			"description": "store Y"
 		},
 		{
-			'name': 'TAX',
-			'description': 'transfer accumulator to X'
+			"name": "TAX",
+			"description": "transfer accumulator to X"
 		},
 		{
-			'name': 'TAY',
-			'description': 'transfer accumulator to Y'
+			"name": "TAY",
+			"description": "transfer accumulator to Y"
 		},
 		{
-			'name': 'TSX',
-			'description': 'transfer stack pointer to X'
+			"name": "TSX",
+			"description": "transfer stack pointer to X"
 		},
 		{
-			'name': 'TXA',
-			'description': 'transfer X to accumulator'
+			"name": "TXA",
+			"description": "transfer X to accumulator"
 		},
 		{
-			'name': 'TXS',
-			'description': 'transfer X to stack pointer'
+			"name": "TXS",
+			"description": "transfer X to stack pointer"
 		},
 		{
-			'name': 'TYA',
-			'description': 'transfer Y to accumulator'
+			"name": "TYA",
+			"description": "transfer Y to accumulator"
 		}
 	]
 }
