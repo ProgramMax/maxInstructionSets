@@ -20,10 +20,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Install ajv & check-jsonschema
-      run: |
-        pip install check-jsonschema && \
-          npm install -g ajv-cli
+    - name: Install check-jsonschema
+      run: pip install check-jsonschema
 
     - name: Validate 6502.json with check-jsonschema
       run: check-jsonschema -v --schemafile InstructionSets/schema.json InstructionSets/6502.json
@@ -33,6 +31,3 @@ jobs:
 
     - name: Validate 8088 and 8086.json with check-jsonschema
       run: check-jsonschema -v --schemafile InstructionSets/schema.json InstructionSets/8088\ and\ 8086.json
-
-    - name: Validate JSON schema with ajv
-      run: ajv validate --all-errors --verbose -s ./InstructionSets/schema.json -d ./InstructionSets/6502.json
