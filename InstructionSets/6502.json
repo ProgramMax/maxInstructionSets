@@ -1,4 +1,5 @@
 {
+	"$schema": "./InstructionSetSchema.json",
 	"registers": [
 		{
 			"name": "PC",
