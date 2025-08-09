@@ -26,7 +26,7 @@ jobs:
           npm install -g ajv-cli
 
     - name: Validate JSON schema with check-jsonschema
-      run: check-jsonschema --schemafile InstructionSets/schema.json InstructionSets/6502.json
+      run: jsonschema --schemafile InstructionSets/schema.json InstructionSets/6502.json
 
     - name: Validate JSON schema with ajv
       run: ajv validate -s InstructionSets/schema.json -d InstructionSets/6502.json
