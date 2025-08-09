@@ -1,0 +1,32 @@
+name: "Build and test"
+
+on:
+  push:
+    branches: [ "tip-of-tree" ]
+  pull_request:
+    branches: [ "tip-of-tree" ]
+
+permissions:
+  contents: read
+
+jobs:
+  Validate:
+    strategy:
+      matrix:
+        runner: [ubuntu-24.04]
+    runs-on: ${{ matrix.runner }}
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install ajv & check-jsonschema
+      run: |
+        npm install -g ajv-cli
+        pip install jsonschema
+
+    - name: Validate JSON schema with ajv
+      run: ajv validate -s InstructionSets/schema.json -d InstructionSets/6502.json
+
+    - name: Validate JSON schema with check-jsonschema
+      run: check-jsonschema --schemafile InstructionSets/schema.json InstructionSets/6502.json
