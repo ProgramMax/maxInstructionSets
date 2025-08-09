@@ -24,7 +24,7 @@ jobs:
       run: pip install check-jsonschema
 
     - name: Confirm InstructionSetSchema.json is a valid schema
-      run: check-jsonschema -v --check-metaschema InstructionSets/InstructionSetSchema.json
+      run: check-jsonschema -v --check-metaschema Schemas/InstructionSetSchema.json
 
     - name: Validate JSON files against schema
-      run: check-jsonschema -v --schemafile InstructionSets/InstructionSetSchema.json InstructionSets/6502.json InstructionSets/6502\ illegal.json InstructionSets/8088\ and\ 8086.json
+      run: check-jsonschema -v --schemafile Schemas/InstructionSetSchema.json InstructionSets/*.json
