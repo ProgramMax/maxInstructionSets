@@ -1,5 +1,5 @@
 {
-	"$schema": "./InstructionSetSchema.json",
+	"$schema": "../Schemas/InstructionSetSchema.json",
 	"registers": [
 		{
 			"name": "AX",

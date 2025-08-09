@@ -1,5 +1,5 @@
 {
-	"$schema": "./InstructionSetSchema.json",
+	"$schema": "../Schemas/InstructionSetSchema.json",
 	"include": "6502.json",
 	"comment": "TODO: There are a handful of NOPs to consume more bytes using fewer total cycles. DOP and TOP are perhaps the mnemonics to use. Does it matter which opcode we choose?",
 	"instructions": [
