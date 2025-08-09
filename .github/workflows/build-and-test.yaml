@@ -23,8 +23,11 @@ jobs:
     - name: Install check-jsonschema
       run: pip install check-jsonschema
 
+    - name: Print check-jsonschema help
+      run: check-jsonschema --help
+
     - name: Validate 6502.json with check-jsonschema
-      run: check-jsonschema -v --check-metaschema InstructionSets/6502.json
+      run: check-jsonschema -v --builtin-schema InstructionSets/6502.json
 
     - name: Validate 6502 illegal.json with check-jsonschema
       run: check-jsonschema -v --schemafile InstructionSets/schema.json InstructionSets/6502\ illegal.json
