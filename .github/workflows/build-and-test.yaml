@@ -22,7 +22,7 @@ jobs:
 
     - name: Install ajv & check-jsonschema
       run: |
-        npm install -g ajv-cli
+        npm install -g ajv-cli \
         pip install jsonschema
 
     - name: Validate JSON schema with check-jsonschema
