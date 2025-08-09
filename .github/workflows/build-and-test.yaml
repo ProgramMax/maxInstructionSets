@@ -34,8 +34,5 @@ jobs:
     - name: Validate 8088 and 8086.json with check-jsonschema
       run: check-jsonschema -v --schemafile InstructionSets/schema.json InstructionSets/8088\ and\ 8086.json
 
-    - name: Print ajv help
-      run: ajv help validate
-
     - name: Validate JSON schema with ajv
-      run: ajv validate -s InstructionSets/schema.json -d InstructionSets/6502.json
+      run: ajv validate --all-errors --verbose -s ./InstructionSets/schema.json -d ./InstructionSets/6502.json
