@@ -24,7 +24,7 @@ jobs:
       run: pip install check-jsonschema
 
     - name: Validate 6502.json with check-jsonschema
-      run: check-jsonschema -v --schemafile InstructionSets/schema.json InstructionSets/6502.json
+      run: check-jsonschema -v InstructionSets/6502.json
 
     - name: Validate 6502 illegal.json with check-jsonschema
       run: check-jsonschema -v --schemafile InstructionSets/schema.json InstructionSets/6502\ illegal.json
