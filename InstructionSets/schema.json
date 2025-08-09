@@ -2,9 +2,76 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"type": "object",
 	"properties": {
+		"include": {
+			"type": "string"
+		},
 		"registers": {
-			"type": "array"
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"type": "object",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"alternate names": {
+						"type": "array",
+						"uniqueItems": true,
+						"items": {
+							"type": "string"
+						}
+					},
+					"description": {
+						"type": "string"
+					},
+					"size": {
+						"type": "integer",
+						"minimum": 1
+					},
+					"subregisters": {
+						"type": "array",
+						"uniqueItems": true,
+						"items": {
+							"type": "object",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"bit": {
+									"type": "integer",
+									"minimum": 0
+								}
+							},
+							"required": ["name", "bit"]
+						}
+					}
+				},
+				"required": ["name", "size"]
+			}
+		},
+		"instructions": {
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"type": "object",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"alternate names": {
+						"type": "array",
+						"uniqueItems": true,
+						"items": {
+							"type": "string"
+						}
+					},
+					"description": {
+						"type": "string"
+					}
+				},
+				"required": ["name"]
+			}
 		}
 	},
-	"required": ["registers"]
+	"required": ["instructions"]
 }
