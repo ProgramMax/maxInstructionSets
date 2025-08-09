@@ -22,11 +22,11 @@ jobs:
 
     - name: Install ajv & check-jsonschema
       run: |
-        pipx install jsonschema && \
+        pipx install check-jsonschema && \
           npm install -g ajv-cli
 
     - name: Validate JSON schema with check-jsonschema
-      run: jsonschema --schemafile InstructionSets/schema.json InstructionSets/6502.json
+      run: check-jsonschema --schemafile InstructionSets/schema.json InstructionSets/6502.json
 
     - name: Validate JSON schema with ajv
       run: ajv validate -s InstructionSets/schema.json -d InstructionSets/6502.json
