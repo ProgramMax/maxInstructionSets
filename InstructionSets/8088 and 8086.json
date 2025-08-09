@@ -94,7 +94,7 @@
 		},
 		{
 			"name": "SI",
-			"description": "source index"
+			"description": "source index",
 			"size": 16
 		},
 		{
@@ -503,7 +503,7 @@
 		{
 			"name": "LOOPNE",
 			"alternate names": ["LOOPNZ"],
-			"description":"loop until auto-decremented CX is zero and while equal/zero flag is not set"
+			"description": "loop until auto-decremented CX is zero and while equal/zero flag is not set"
 		},
 		{
 			"name": "MOV",
@@ -535,7 +535,7 @@
 		},
 		{
 			"name": "NOT",
-			"description": "one"s complement negation"
+			"description": "one's complement negation"
 		},
 		{
 			"name": "OR",
@@ -571,7 +571,7 @@
 		},
 		{
 			"name": "RETF",
-			"description": "return far from procedure"
+			"description": "return far from procedure",
 			"comment": "RET is a shorthand for RETF or RETN, depending on PROC size"
 		},
 		{
